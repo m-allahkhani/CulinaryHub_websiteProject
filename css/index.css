@@ -1,0 +1,48 @@
+header{
+    background-color: rgb(242, 161, 0);
+}
+
+#logo_image{
+    height: 150px;
+    width: 150px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#nav-list{
+    margin-top: 10px;
+    flex-direction:row;
+    flex-wrap: wrap;
+    display: flex;
+}
+li{
+    float: right;
+    padding-left: 20px;
+    /* rgb(255, 222, 104); */
+    background-color: rgb(251, 213, 0);
+    flex-grow: 1;
+    border: 1.5px solid rgb(242, 161, 0);
+    padding-right: 10px;
+}
+li:hover{
+    background-color: rgb(236, 58, 14);
+}
+
+.navbar-header {
+    clear: both;
+    margin-top: -10px;
+}
+.navbar-brand h1{
+    color: rgb(154, 11, 11);
+    text-shadow: 2px 2px 1px rgb(81, 24, 24);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+@media (max-width: 767px) { 
+
+    #logo_image{
+        display: none;
+    }
+}
+

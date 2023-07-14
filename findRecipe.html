@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css\index.css">
+    <link rel="stylesheet" href="css\findRecipe.css">
+    <script src="bootstrap-5.3.0-alpha3-dist\js\jquery-3.7.0.min.js"></script>
+    <script src="bootstrap-5.3.0-alpha3-dist\js\bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+    table{
+        border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+    }
+   </style>
+</head>
+<body>
+
+    <header class="navbar navbar-default row">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="main.html">
+                    <img id="logo_image" src="pictures\download.png" alt="logo image">
+                </a>
+            </div>
+            <div>
+                
+            </div>
+            <div class="navbar-brand">
+                <a href="main.html">
+                    <h1> CulinaryHub</h1>
+                </a>
+            </div>
+        </div>
+        <br>
+        <nav class="navbar-fixed-top">
+            <ul id="nav-list" class="nav navbar-nav">
+                <li><a href="findRecipe.html">
+                        <p><i class="fa fa-search"></i><br>Find Recipe</p>
+                    </a></li>
+                <li><a href="">
+                        <p><i class="fa fa-newspaper-o"></i><br>Blog</p>
+                    </a></li>
+                </li>
+                <li><a href="">
+                        <p><i class="fa fa-cutlery"></i><br> Cooking Tips</p>
+                    </a></li>
+                <li><i class="fa fa-user"></i><br><a href="signIn.html">Sign in </a><a href="login.html">/ Login</a>
+                <li><a href="main.html">
+                        <p><i class="fa fa-home"></i><br> Home</p>
+                    </a></li>
+                <li><a href="">
+                        <p><i class="fa fa-info"></i><br> About Us</p>
+                    </a>
+            </ul>
+        </nav>
+    </header>
+    <div id="main-content" class="container">
+        <div id="search-box">
+            <i class="fa fa-"></i>
+            <div class="search_item">
+                <input type="text" id="diet" list="dietList" placeholder="Diet">
+                    <datalist id="dietList">
+                      <option value="Dairy free">
+                      <option value="Gluten free">
+                      <option value="Nut free">
+                      <option value="Vegan">
+                      <option value="Vegetarian">
+                    </datalist> 
+            </div>
+            
+                <div class="search_item">
+                    <input type="text" id="ingredients" list="ingredientsList" placeholder="Ingredients">
+                        <datalist id="ingredientsList">
+                            <option value="salt">
+                            <option value="sugar">
+                            <option value="flour">
+                            <option value="butter">
+                            <option value="milk">
+                            <option value="eggs">
+                            <option value="oil">
+                            <option value="garlic">
+                            <option value="onion">
+                            <option value="tomato">
+                            <option value="carrot">
+                            <option value="potato">
+                            <option value="rice">
+                            <option value="chicken">
+                            <option value="beef">
+                            <option value="pork">
+                            <option value="fish">
+                            <option value="shrimp">
+                            <option value="cheese">
+                            <option value="yogurt">
+                            <option value="lemon">
+                            <option value="lime">
+                            <option value="cilantro">
+                            <option value="basil">
+                            <option value="oregano">
+                            <option value="chili">
+                            <option value="pepper">
+                            <option value="ginger">
+                            <option value="cinnamon">
+                            <option value="vanilla">
+                        </datalist> 
+                </div>
+            <div class="search_item">
+                <input type="text" id="cuisine" list="cuisineList" placeholder="Cuisine">
+                    <datalist id="cuisineList">
+                      <option value="Italian">
+                      <option value="American">
+                      <option value="Mediterranean">
+                      <option value="British">
+                      <option value="French">
+                      <option value="Chinese">
+                      <option value="Mexican">
+                      <option value="Indian">
+                      <option value="Japanese">
+                    </datalist>
+            </div>
+            <div class="search_item">
+                <input type="text" id="meals" list="mealsList" placeholder="Meals">
+                <datalist id="mealsList">
+                    <option value="Breakfast">
+                    <option value="Cornoration Big Launch">
+                    <option value="Dessert">
+                    <option value="Main Meal">
+                    <option value="Salad">
+                    <option value="Sauce/dressing">
+                    <option value="Snack/side dish">
+                    <option value="Soup">
+                    <option value="Starter/snack">
+                </datalist>
+            </div>
+            <div class="search_item">
+                <select name="cookTime" id="cookTime" >
+                    <option value="cookTime">Cooking time</option>
+                    <option value="20min">Under 20 mins</option>
+                    <option value="20-45">20 to 45 mins</option>
+                    <option value="45">Over 45 mins</option>
+                    </select>
+            </div>
+            <div class="search_item">
+                <select name="condition" id="condition" >
+                    <option value="condition">condition specific</option>
+                    <option value="20min">Diabetes</option>
+                    <option value="20-45">High blood pressure</option>
+                    <option value="45">High cholesterol</option>
+                    </select>
+            </div>
+
+        </div>
+        <div id="ingredients">
+
+        </div>
+       
+    </div>
+    
+
+</body>
+
+</html>
