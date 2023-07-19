@@ -12,34 +12,41 @@
     <script src="bootstrap-5.3.0-alpha3-dist\js\jquery-3.7.0.min.js"></script>
     <script src="bootstrap-5.3.0-alpha3-dist\js\bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <style>
-    table{
-        border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-    }
-   </style>
+    <script src="js/findrecipe.js"></script>
+    <script src="js/data.js"></script>
 </head>
 <body>
 
     <header class="navbar navbar-default row">
-        <div class="container">
-            <div class="navbar-header">
+        <!-- <div class="container">
+            <div class="row"> -->
+            <div class="col-md-3">
+            <div class="navbar-header ">
                 <a href="main.html">
                     <img id="logo_image" src="pictures\download.png" alt="logo image">
                 </a>
+               
             </div>
-            <div>
-                
             </div>
-            <div class="navbar-brand">
+            <div class="col-md-6 col-sm-8 col-xs-12">
+            <div class="input-container d-flex">
+                <i id="search-headerIcon" class="icon fa fa-search"></i>
+                <input id="searchHeader" class="flex-grow-1" type="text" placeholder="What would you like to cook?">
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="navbar-brand ">
                 <a href="main.html">
                     <h1> CulinaryHub</h1>
                 </a>
             </div>
-        </div>
-        <br>
+            </div>
+            <!-- </div>
+       
+        </div> -->
+    
+        <!-- <br> -->
         <nav class="navbar-fixed-top">
             <ul id="nav-list" class="nav navbar-nav">
                 <li><a href="findRecipe.html">
@@ -62,6 +69,7 @@
             </ul>
         </nav>
     </header>
+    <div  class="container">
     <div id="main-content" class="container">
         <div id="search-box">
             <i class="fa fa-"></i>
@@ -79,36 +87,47 @@
                 <div class="search_item">
                     <input type="text" id="ingredients" list="ingredientsList" placeholder="Ingredients">
                         <datalist id="ingredientsList">
-                            <option value="salt">
-                            <option value="sugar">
-                            <option value="flour">
-                            <option value="butter">
-                            <option value="milk">
-                            <option value="eggs">
-                            <option value="oil">
-                            <option value="garlic">
-                            <option value="onion">
-                            <option value="tomato">
-                            <option value="carrot">
-                            <option value="potato">
-                            <option value="rice">
-                            <option value="chicken">
-                            <option value="beef">
-                            <option value="pork">
-                            <option value="fish">
-                            <option value="shrimp">
-                            <option value="cheese">
-                            <option value="yogurt">
-                            <option value="lemon">
-                            <option value="lime">
-                            <option value="cilantro">
-                            <option value="basil">
-                            <option value="oregano">
-                            <option value="chili">
-                            <option value="pepper">
-                            <option value="ginger">
-                            <option value="cinnamon">
-                            <option value="vanilla">
+                            <option value="Salt">
+                            <option value="Sugar">
+                            <option value="Flour">
+                            <option value="Butter">
+                            <option value="Milk">
+                            <option value="Eggs">
+                            <option value="Oil">
+                            <option value="Garlic">
+                            <option value="Onion">
+                            <option value="Tomato">
+                            <option value="Carrot">
+                            <option value="Potato">
+                            <option value="Rice">
+                            <option value="Chicken">
+                            <option value="Beef">
+                            <option value="Pork">
+                            <option value="Fish">
+                            <option value="Shrimp">
+                            <option value="Cheese">
+                            <option value="Yogurt">
+                            <option value="Lemon">
+                            <option value="Lime">
+                            <option value="Cilantro">
+                            <option value="Basil">
+                            <option value="Oregano">
+                            <option value="Chili">
+                            <option value="Pepper">
+                            <option value="Ginger">
+                            <option value="Cinnamon">
+                            <option value="Vanilla">
+                            <option value="Lettuce">
+                            <option value="Chicken Wings">
+                            <option value="Bun">
+                                <option value="Bacon">
+                                    <option value="Cucumber">
+                            <option value="Ground Beef">
+                            <option value="Bread">
+                            <option value="Pork Ribs">
+                            <option value="Apples">
+                            <option value="Cheddar Cheese">
+                            <option value="Elbow Macaroni">
                         </datalist> 
                 </div>
             <div class="search_item">
@@ -129,39 +148,48 @@
                 <input type="text" id="meals" list="mealsList" placeholder="Meals">
                 <datalist id="mealsList">
                     <option value="Breakfast">
-                    <option value="Cornoration Big Launch">
+                    <option value="Launch">
                     <option value="Dessert">
                     <option value="Main Meal">
                     <option value="Salad">
-                    <option value="Sauce/dressing">
-                    <option value="Snack/side dish">
+                    <option value="Sauce">
+                    <option value="Snack">
                     <option value="Soup">
-                    <option value="Starter/snack">
+                    <option value="Starter">
                 </datalist>
             </div>
             <div class="search_item">
                 <select name="cookTime" id="cookTime" >
                     <option value="cookTime">Cooking time</option>
-                    <option value="20min">Under 20 mins</option>
-                    <option value="20-45">20 to 45 mins</option>
-                    <option value="45">Over 45 mins</option>
+                    <option value="20">Under 20 mins</option>
+                    <option value="45">20 to 45 mins</option>
+                    <option value="46">Over 45 mins</option>
                     </select>
             </div>
             <div class="search_item">
                 <select name="condition" id="condition" >
                     <option value="condition">condition specific</option>
-                    <option value="20min">Diabetes</option>
-                    <option value="20-45">High blood pressure</option>
-                    <option value="45">High cholesterol</option>
+                    <option value="Diabetes">Diabetes</option>
+                    <option value="HighBloodPressure">High blood pressure</option>
+                    <option value="HighCholesterol">High cholesterol</option>
                     </select>
             </div>
-
+        </div >
+        <div class="col-12">
+            <button id="searchbut" type="submit" class="search">Search</button>
         </div>
-        <div id="ingredients">
-
+        <div id="result">
         </div>
-       
+
+        
     </div>
+    <div id="main" class="container">
+        <div id="recipes" class="row">
+            
+        </div>
+    </div>
+</div>
+    
     
 
 </body>

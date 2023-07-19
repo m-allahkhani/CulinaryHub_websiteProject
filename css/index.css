@@ -6,6 +6,31 @@ header{
     height: 150px;
     width: 150px;
 }
+
+.input-container {
+    position: relative;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  
+  #search-headerIcon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: gray;
+  }
+  
+  #searchHeader {
+    padding-left: 30px; /* Adjust the value to align the text properly */
+   
+  }
+  
+  #searchHeader:focus{
+    border: 3px solid rgb(247, 65, 45);
+  }
+
+
 a{
     text-decoration: none;
     color: inherit;
@@ -24,10 +49,14 @@ li{
     flex-grow: 1;
     border: 1.5px solid rgb(242, 161, 0);
     padding-right: 10px;
+    color: black;
 }
 li:hover{
-    background-color: rgb(236, 58, 14);
+    /* background-color: rgb(236, 58, 14); */
+    background-color: rgb(248, 127, 21);
+    color: beige;
 }
+
 
 .navbar-header {
     clear: both;
