@@ -182,13 +182,16 @@
     }
 
     .recipe-tile{
-       width: 50%;
-      height: 50%;
+       width: 70%;
+      height: auto;
+      
        margin: auto;
        margin-bottom: 10px;
     }
     
-   
+   .recipe-tile span{
+    font-size: small;
+   }
   
   
   }

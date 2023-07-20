@@ -76,8 +76,8 @@ document.addEventListener('DOMContentLoaded', function() {
         itemDiv.setAttribute("data-details",number)
         itemDiv.setAttribute("class","col-md-3 col-sm-6 col-xs-12");
         var atag= document.createElement("a");
-        atag.setAttribute("href","#");
-        atag.setAttribute("href","#");
+        atag.setAttribute("href", "details.html?number=" + number);
+        atag.setAttribute('target', '_blank');
         var tileDive = document.createElement("div");
         tileDive.setAttribute("class","recipe-tile"); 
         var img =  document.createElement("img");
@@ -106,11 +106,11 @@ document.addEventListener('DOMContentLoaded', function() {
           const recipes = data.recipes;
             var showRecipe;
             var index = 0;
-          
+            var number =0;
           recipes.forEach(recipe => {
     
             showRecipe = true;
-            if(diet !="" && recipe.diet!=diet){
+            if(diet !="" && !recipe.diet.includes(diet)){
                showRecipe = false;
             //    document.body.style.backgroundColor = "red";
             }
@@ -157,9 +157,10 @@ document.addEventListener('DOMContentLoaded', function() {
       
             if(showRecipe==true){
                 // document.body.style.backgroundColor = "green";
-                showRecipes(recipe,index);
+                showRecipes(recipe,number);
                 index+=1;
             }
+            number+=1;
         });
         if( index == 0){
             var txt = document.createElement("p");

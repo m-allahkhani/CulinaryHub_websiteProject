@@ -1,0 +1,34 @@
+.image {
+    text-align: center;
+  }
+.img-custom {
+    max-width: 100%;
+    width: 50%;
+    max-height: 100%;
+    height: 40%;
+    border: 2px solid rgb(176, 24, 24);
+    margin-left: 25%;
+    max-height: 30vw;
+  }
+.carousel-control-next {
+    right: 0;
+    margin-right: 18%; 
+  
+  }
+.carousel-control-prev {
+    left: 0;
+    margin-left: 18%; 
+   
+  }
+ 
+  #name  {
+    font-family: "Arial Black", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #830404;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+  }
+  
